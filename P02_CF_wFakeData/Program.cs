@@ -1,3 +1,11 @@
+using Microsoft.EntityFrameworkCore;
+using P02_CF_wFakeData.Data;
+using P02_CF_wFakeData.Service;
+using Newtonsoft.Json.Serialization;
+
+
+
+
 namespace P02_CF_wFakeData
 {
     public class Program
@@ -8,6 +16,26 @@ namespace P02_CF_wFakeData
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<AppDbContext>();
+
+            // Dependency Injection
+
+            string connString = builder.Configuration.GetConnectionString("Connection"); // appsettings.json dosyasýndan öðreniliyor
+
+            builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connString));
+            // Fake Data Serice de ekleniyor.
+
+            builder.Services.AddTransient<IFakeDataService, FakeDataService>();
+
+            // Fake servisi Json yapýsýnda çalýþacak. Bu yüzden controllerlarýma bir taným yapmam gerekiyor.
+            builder.Services.AddControllers().AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ContractResolver=new DefaultContractResolver();
+            });
+
+
+
+
 
             var app = builder.Build();
 
