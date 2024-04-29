@@ -15,7 +15,8 @@ namespace P01_CF.Entities
 
         public DateTime SDoB {  get; set; }
 
-        
+        // Relational Definitions
+        public virtual Standard Standard { get; set; } // Standart a bağlıyım
 
 
 

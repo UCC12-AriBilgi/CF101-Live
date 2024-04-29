@@ -5,6 +5,8 @@ namespace P01_CF.Data
 {
     public class StudentDbContext : DbContext
     {
+        // DbContext VT yapımı içinde barındıran sınıf 
+
         public StudentDbContext(DbContextOptions options) : base(options)
         {
                 
@@ -28,6 +30,7 @@ namespace P01_CF.Data
 
         public DbSet<Student> Students { get; set; }
         public DbSet<Person> Persons { get; set; }
+        public DbSet<Standard> Standards { get; set; }
 
 
     }

@@ -1,3 +1,8 @@
+using Bogus;
+using Microsoft.EntityFrameworkCore;
+using P01_CF.Data;
+using P01_CF.Entities;
+
 namespace P01_CF
 {
     public class Program
@@ -8,6 +13,11 @@ namespace P01_CF
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            // Dependency Injection
+            builder.Services.AddDbContext<StudentDbContext>(Options => Options.UseSqlServer(builder.Configuration.GetConnectionString("Connection")));
+
+           
+
 
             var app = builder.Build();
 
