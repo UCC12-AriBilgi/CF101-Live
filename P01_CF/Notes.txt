@@ -1,0 +1,11 @@
+﻿- Oncelikle EF için gerekli paketleri nuGet den yüklüyoruz
+	. Microsoft.EntityFrameworkCore
+	. Microsoft.EntityFrameworkCore.Design
+	. Microsoft.EntityFrameworkCore.SqlServer
+	. Microsoft.EntityFrameworkCore.Tools
+
+- CodeFirst : DB'm yok. Ben code tarafından DB yi ve içindeki tabloları yaratacağım.
+
+- Bunlar için code tarafında sınıf yapısını oluşturuyoruz. Bu bir anlamda yaratılacak olan DB içinde yer alacak tablolar anlamına geliyor.
+
+- Diğer taraftan yapmamız gereken Context adını verdiğimiz DB'min içinde neler var anlamında bir sınıf olusturmak gerekiyor.
