@@ -1,0 +1,14 @@
+﻿* DB tarafında yaratılacak tablolar için model tanımlarında açık bir sekilde ilgili alanların nasıl olacağına ilişkin bazı bilgiler verilebilmekte. Bunlar DataAnnotations(Dipnot,ek açıklamalar) olarak isimlendirilmektedir.
+
+- Validation Attributes:
+	Alanımızın bazı ozellikleriyle ilgili (Required,Length...) bilgiler vermek için.
+
+- Formatting Attributes:
+	Veri tiplerimizin nasıl olacağı nasıl tanımlanacağı hk.
+
+- Display Attributes:
+	Ekrana gelen bilgilerin ekranda nasıl isimlendirileceği, nasıl görüneceği şeklindeki özelliklerdir.
+
+- Database-Related Attributes
+	Key, Foreign Key, Identity, ColumnName gibi VT yi ilgilendiren attribute lar.
+
