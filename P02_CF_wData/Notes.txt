@@ -8,7 +8,7 @@
 
 - Örnekte yapılmak istenen şey code tarafında 2 adet sınıf oluşturup(Student,Teacher) ilişkilerini beliryeyip bunları db tarafında oluşturmak ve aynı zamanda oluştururken içinde bazı bilgilerle doldurmak. Not: Burada bir öğretmenin birden fazla öğrencisi olduğu, buna karşılık bir öğrencinin sadece bir öğretmeni olacağı kabul edilsin.
 
-- Dummy data yaratılacağı için context yapısını oluşturmadan once bu iki model için bazı konfigurasyon ve dummy veri yaratma kısımlarını halledelim.
+- Dummy data yaratılacağı için context yapısını oluşturmadan once bu iki model için bazı konfigurasyon ve dummy veri yaratma kısımlarını halledelim.(Configuration,Seeds)
 
 
 - Bunlar için code tarafında sınıf yapısını oluşturuyoruz. Bu bir anlamda yaratılacak olan DB içinde yer alacak tablolar anlamına geliyor.
