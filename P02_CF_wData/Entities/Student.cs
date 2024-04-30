@@ -8,6 +8,6 @@
         public string StudentNo { get; set; }
         public bool IsActive { get; set; } // Öğrenci aktif/pasif
 
-        public Teacher Teacher { get; set; } // Öğrencinin bağlı olduğu öğretmen
+        public Teacher? Teacher { get; set; } // Öğrencinin bağlı olduğu öğretmen, su an için boş olabilir durumu için ? bunu belirtmiş olduk(null olabilir)
     }
 }

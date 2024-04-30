@@ -6,6 +6,7 @@ namespace P02_CF_wData.Seeds
 {
     public class StudentSeed : IEntityTypeConfiguration<Student>
     {
+        // VT tarafındaki yaratılacak Student tablosu için örnek veriler..
         public void Configure(EntityTypeBuilder<Student> builder)
         {
             builder.HasData(

@@ -4,6 +4,9 @@ using P02_CF_wData.Entities;
 
 namespace P02_CF_wData.Configurations
 {
+    // Yaratılacak olan Teacher tablosu ile ilgili bazı konfigürasyon ayarlamaları
+    // column veri tipi,not null/null,identity...
+
     public class TeacherConfiguration : IEntityTypeConfiguration<Teacher>
     {
         public void Configure(EntityTypeBuilder<Teacher> builder)

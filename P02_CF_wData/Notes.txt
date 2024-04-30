@@ -13,4 +13,13 @@
 
 - Bunlar için code tarafında sınıf yapısını oluşturuyoruz. Bu bir anlamda yaratılacak olan DB içinde yer alacak tablolar anlamına geliyor.
 
-- Diğer taraftan yapmamız gereken Context adını verdiğimiz DB'min içinde neler var anlamında kullanılacak bir sınıf olusturmak gerekiyor.
+- Diğer taraftan yapmamız gereken Context adını verdiğimiz DB'min içinde neler var anlamında kullanılacak bir sınıf olusturmak gerekiyor. Ve Configuration ve Seed kısımlarını da ekliyoruz.
+
+- Sıra geldi bunları yaratmaya (VT,tablolar..)
+	Bunu da Tools/Nuget Package Manager/Package Manager Console yardımıyla yapacağız.
+
+	PM> add-migration InitialCreate
+
+	Migration tanımları oluştuktan sonra da 
+
+	PM> update-database komutunu girerek SQL Server tarafında ilgili Dbnin oluşması sağlıyoruz.
